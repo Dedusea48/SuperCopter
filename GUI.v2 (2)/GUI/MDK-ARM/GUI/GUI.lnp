@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"gui\startup_stm32f413xx.o"
+"gui\main.o"
+"gui\stm32f4xx_it.o"
+"gui\stm32f4xx_hal_msp.o"
+"gui\stm32f4xx_hal_tim.o"
+"gui\stm32f4xx_hal_tim_ex.o"
+"gui\stm32f4xx_hal_rcc.o"
+"gui\stm32f4xx_hal_rcc_ex.o"
+"gui\stm32f4xx_hal_flash.o"
+"gui\stm32f4xx_hal_flash_ex.o"
+"gui\stm32f4xx_hal_flash_ramfunc.o"
+"gui\stm32f4xx_hal_gpio.o"
+"gui\stm32f4xx_hal_dma_ex.o"
+"gui\stm32f4xx_hal_dma.o"
+"gui\stm32f4xx_hal_pwr.o"
+"gui\stm32f4xx_hal_pwr_ex.o"
+"gui\stm32f4xx_hal_cortex.o"
+"gui\stm32f4xx_hal.o"
+"gui\stm32f4xx_hal_exti.o"
+"gui\stm32f4xx_hal_uart.o"
+"gui\system_stm32f4xx.o"
+--strict --scatter "GUI\GUI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GUI.map" -o GUI\GUI.axf
